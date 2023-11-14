@@ -1,0 +1,25 @@
+name: Default issue
+description: Fill in the information about the issue
+title: "[Bug]: "
+labels: ["bug", "triage"]
+projects: ["octo-org/1", "octo-org/44"]
+assignees:
+  - octocat
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the issue and requirements
+      placeholder: Description and requirements
+      value: "Description stated in the title"
+    validations:
+      required: false
+  - type: input
+    id: cc
+    attributes:
+      label: CC
+      description: Notify team members on issue status change
+      placeholder: ex. @user1, @user2
+    validations:
+      required: false
